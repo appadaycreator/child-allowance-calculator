@@ -140,6 +140,10 @@
               ※実際の支給額は市区町村で確認してください。
             </div>
             <button class="btn" style="margin-top:16px;" onclick="location.reload()">もう一度計算</button>
+            <div style="display:flex;gap:8px;margin-top:10px;">
+              <button class="btn" style="flex:1;background:#f1f5f9;color:#334155;" onclick="(function(){var t=document.getElementById('r-month').textContent;var y=document.getElementById('r-year').textContent;var d=document.getElementById('r-detail').innerText;var txt='【児童手当 計算結果】\n月額合計: '+t+'\n年額: '+y+'\n\n'+d+'\nhttps://appadaycreator.com/child-allowance-calculator/';try{navigator.clipboard?navigator.clipboard.writeText(txt).then(function(){alert('コピーしました！');}):alert('コピー非対応ブラウザです');}catch(e){}})()">📋 コピー</button>
+              <button class="btn" style="flex:1;background:#f1f5f9;color:#334155;" onclick="window.print()">🖨 印刷</button>
+            </div>
           </div>
         </div>
 
